@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+</head>
+
+<body>
+    <h1>College Registration Form</h1>
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Full Name:</label><input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label><input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+                placeholder="10 digit number" required><br><br>
+            <label for="dob">DOB:</label><input type="date" id="dob" name="dob" required><br><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Course Details</legend>
+            <label for="course">Course:</label><select id="course" name="course" required>
+                <option value="">-- Select --</option>
+                <option value="bca">BCA</option>
+                <option value="btech">B.Tech</option>
+            </select><br><br>
+            <label>Gender:</label><label><input type="radio" name="gender" value="male" required>
+                Male</label><label><input type="radio" name="gender" value="female"> Female</label><br><br>
+            <label>Skills:</label><label><input type="checkbox" name="skill" value="html"> HTML</label><label><input
+                    type="checkbox" name="skill" value="css"> CSS</label><br><br>
+            <label for="photo">Photo:</label><input type="file" id="photo" name="photo"><br><br>
+        </fieldset><br>
+        <button type="submit">Register</button> <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
