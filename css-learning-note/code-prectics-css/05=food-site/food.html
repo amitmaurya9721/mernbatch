@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf4;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: orange;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .hero {
+            background: #ffe0b2;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero button {
+            background: #e85d04;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .menu {
+            padding: 45px 8%;
+            text-align: center;
+        }
+
+        .food-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px #0002;
+            padding-bottom: 20px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .food-card h3 {
+            margin: 15px;
+        }
+
+        .food-card p {
+            color: #e85d04;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 500px) {
+            header {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>FoodZone</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Delicious Food For You</h1>
+        <p>Fresh food, great taste and amazing prices.</p>
+        <button>Order Now</button>
+    </div>
+
+    <section class="menu" id="menu">
+
+        <h2>Our Popular Food</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+                     alt="Burger">
+
+                <h3>Cheese Burger</h3>
+                <p>₹149</p>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
+                     alt="Pizza">
+
+                <h3>Italian Pizza</h3>
+                <p>₹249</p>
+            </div>
+
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500"
+                     alt="Food">
+
+                <h3>Special Meal</h3>
+                <p>₹199</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 FoodZone | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

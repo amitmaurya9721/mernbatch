@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us - Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="page">
+    <section class="welcome-panel">
+      <span class="brand">join<span>.</span></span>
+      <div>
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Learn something new. Build something great.</h1>
+        <p class="welcome-text">Create your learning profile and take the next step in your web development journey.</p>
+      </div>
+      <p class="bottom-note">A simple practice project made with HTML and CSS.</p>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-heading">
+        <span class="eyebrow">GET STARTED</span>
+        <h2>Create your account</h2>
+        <p>Fill in your details below.</p>
+      </div>
+
+      <form action="#" method="get">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="course">Choose Your Course</label>
+          <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">Full Stack Development</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="password">Create Password</label>
+          <input id="password" name="password" type="password" placeholder="At least 8 characters" minlength="8"
+            required>
+        </div>
+
+        <label class="check-row">
+          <input type="checkbox" required>
+          <span>I agree to the sample terms and conditions.</span>
+        </label>
+
+        <button type="submit">Create Account <span>→</span></button>
+      </form>
+
+      <p class="form-note">Demo only: this form does not create an account or store your details.</p>
+    </section>
+  </main>
+</body>
+
+</html>
