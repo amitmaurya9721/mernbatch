@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+    <h1>JavaScript Examples</h1>
+
+    <h2>Example 1 - Simple Calculator</h2>
+
+    <input type="number" id="num1" placeholder="Enter First Number">
+    <input type="number" id="num2" placeholder="Enter Second Number">
+
+    <button onclick="addNumbers()">Add</button>
+    <button onclick="subtractNumbers()">Subtract</button>
+
+    <p id="result1"></p>
+
+
+    <h2>Example 2 - Student Result</h2>
+
+    <input type="text" id="studentName" placeholder="Enter Student Name">
+    <input type="number" id="marks" placeholder="Enter Marks">
+
+    <button onclick="checkResult()">Check Result</button>
+
+    <p id="result2"></p>
+
+
+    <script>
+        function addNumbers() {
+
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let result = a + b;
+
+            document.getElementById("result1").innerHTML =
+                "Addition: " + result;
+        }
+
+        function subtractNumbers() {
+
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let result = a - b;
+
+            document.getElementById("result1").innerHTML =
+                "Subtraction: " + result;
+        }
+
+    </script>
+
+</body>
+</html>
